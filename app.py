@@ -4,6 +4,8 @@ from flask_restx import Api
 from config import Config
 from dao.model.movie import Movie
 from setup_db import db
+from views.director import director_ns
+from views.genres import genre_ns
 from views.movie import movie_ns
 
 
@@ -21,6 +23,8 @@ def register_extensions(application):
     db.init_app(application)
     api = Api(application)
     api.add_namespace(movie_ns)
+    api.add_namespace(genre_ns)
+    api.add_namespace(director_ns)
     create_data(application, db)
 
 
