@@ -13,7 +13,7 @@ movies_schema = MovieSchema(many=True)
 @movie_ns.route("/")
 class MoviesView(Resource):
     def get(self):
-        all_movies = db.session.query(Movie).get_all()
+        all_movies = db.session.query(Movie).all()
         return movies_schema.dump(all_movies)
 
     def post(self):
