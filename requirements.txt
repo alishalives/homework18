@@ -12,6 +12,15 @@ pyrsistent==0.18.0
 pytz==2021.3
 six==1.16.0
 typing-extensions==3.10.0.2
-Werkzeug==2.0.2
-zipp==3.6.0
+Werkzeug==2.2.3
+zipp==3.15.0
 marshmallow==3.14.0
+Flask-SQLAlchemy==2.5.1
+SQLAlchemy==1.4.26
+colorama==0.4.6
+greenlet==2.0.2
+packaging==23.0
+wheel==0.38.4
+setuptools==65.5.1
+pip==22.3.1
+
