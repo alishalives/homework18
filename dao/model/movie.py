@@ -5,6 +5,7 @@ from dao.model.genre import Genre
 
 
 class Movie(db.Model):
+    """ Создание модели таблицы movie """
     __tablename__ = "movie"
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(50))
@@ -17,6 +18,7 @@ class Movie(db.Model):
 
 
 class MovieSchema(Schema):
+    """ Создание схемы таблицы movie для дальнейшей сериализации """
     id = fields.Int()
     title = fields.Str()
     description = fields.Str()

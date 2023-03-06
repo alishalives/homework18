@@ -2,6 +2,7 @@ from dao.model.genre import Genre
 
 
 class GenreDAO:
+    """ Создание слоя DAO с методами обработки данных """
     def __init__(self, session):
         self.session = session
 
